@@ -7,13 +7,22 @@ from time import sleep
 from yaspin import yaspin
 import importlib.resources
 import re
+import json
 
 CLOUD_URL = "https://us-east1-chat-agents.cloudfunctions.net/deploy-from-cli"
 UPLOAD_URL = "https://us-east1-chat-agents.cloudfunctions.net/upload-file"
 
 @click.group()
 def cli():
-    pass
+    data = {}
+    data["source_city"] = None
+    data["destination_city"] = None
+    data["date"] = None
+    data["days"] = None
+
+    # Write the data to the JSON file
+    with open("data.json", "w") as json_file:
+        json.dump(data, json_file)
 
 @cli.command()
 @click.option("--path", prompt="Path to the main.py file", required=True)

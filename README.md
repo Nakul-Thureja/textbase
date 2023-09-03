@@ -1,3 +1,10 @@
+<h1>Travel Help Bot</h1>
+I've developed a travel bot using a text-based repository that serves as a comprehensive travel guide for the following cities: 
+Delhi, Mumbai, Chennai, Kolkata, Bengaluru, Hyderabad, Pune, Jaipur, Ahmedabad, and Lucknow. 
+The bot is integrated with a database containing dummy flight and hotel data, which is used to demonstrate its functionality. 
+While the user interface may currently lack clarity, once we can display tables in the responses, the bot will work seamlessly. 
+This demo showcases the potential of integrating data with ChatGPT, and it can be further expanded by integrating real-time APIs for flight and hotel bookings.
+
 <p align="center">
   <picture>
     <img alt="Textbase python library" src="assets/logo.svg" width="352" height="59" style="max-width: 100%;">
@@ -66,7 +73,7 @@ Run the following command:
     ```
 Response:
 ```bash
-Path to the main.py file: examples/openai-bot/main.py # You can create a main.py by yourself and add that path here. NOTE: The path should not be in quotes
+Path to the main.py file: main.py # You can create a main.py by yourself and add that path here. NOTE: The path should not be in quotes
 ```
 Now go to the link in blue color which is shown on the CLI and you will be able to chat with your bot!
 ![Local UI](assets/test_command.png)
